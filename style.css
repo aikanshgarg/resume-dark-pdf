@@ -6,12 +6,19 @@ body {
     font-size: 81.25%;
     line-height: 150%;
 }
-
+#credits {
+  display: inline-block;
+  position: absolute;
+  top: 98.3%;
+  left: 67%;
+  color: black;
+  font-style: italic;
+}
 page {
   /*background:linear-gradient(to left, #ec38bc, #7303c0);*/
   background:  #7303c0;
   display: block;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   margin-bottom: 0.5cm;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
   position: relative;
@@ -38,10 +45,15 @@ page[size="A4"] {
   background-color: #03001e;
   margin-left: 23%;
   margin-top: -48%;
-  background-image: url('dp.jpeg');
+  /*background-image: url('dps.jpeg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background: rgba(3,0,30,0.5);
+ background-repeat: no-repeat;*/
   position: absolute;
+   background: linear-gradient(rgba(115,3,192, 0.4), rgba(3,0,30, 0.6)), url("dps.jpeg");
+  min-height: 100%;
+  background-size: cover;
+  background-position: 50% 0;
 }
 
 h2 {
@@ -75,18 +87,18 @@ h3 {
 #small {
   height: 1cm;
   width: 7cm;
+  margin-bottom: 5%;
 }
 .l {
   margin-left: 15%;
 }
 .r {
-  margin-top: 22%;
+  margin-top: 7%;
 }
 
 p {
   margin: 0;
 }
-
 
 .name-color-box {
   height: 1.6cm;
@@ -163,8 +175,101 @@ p {
   margin-right: 7%;
 }
 
+.timeline {
+  display: flex;
+  margin-top: 7%;
+  align-items: baseline;
+  margin-left: 7%;
+  margin-right: 9%;
+}
+.year {
+  display: inline-flex;
+  margin-right: 4%;
+  font-weight: bold;
+}
+
+#circle-y {
+  display: inline-flex;
+  position: relative;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 2px solid #7303c0;
+  margin-top: 5%;
+  margin-right: 4%;
+  padding-right: 3.02px;
+}
+.tltwocircle{
+  display: inline-flex;
+  position: relative;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 2px solid #7303c0;
+  margin-top: 5%;
+  margin-right: 4%;
+  padding: 0;
+  margin-left: 4%;
+}
+
+#tltwo {
+  margin-top: 0;
+}
+
+.bar {
+  height: 10px;
+  background-color: #7303c0;
+  position: absolute;
+  margin-top: -3%;
+  
+}
+#cpp {
+  width: 45%;
+  margin-left: 5%;
+}
+#html {
+  width: 85%;
+  margin-left: 5%;
+}
+#css {
+  width: 90%;
+  margin-left: 5%;
+}
+#js {
+  margin-left: 5%;
+  width: 40%;
+}
+#rails {
+  margin-left: 5%;
+  width: 70%;
+}
 
 
+#line {
+  position: absolute;
+  display: inline-flex;
+  border-left: 1px solid #7303c0;
+  height: 102px;
+  margin-left: 42%;
+  margin-top: 102%;
+}
+.hor-line {
+  display: inline-flex;
+  border-bottom: 1px solid #7303c0;
+  width: 148px;
+  position: absolute;
+  margin-top: 5.7%;
+  margin-left: 16.5%;
+
+}
+
+#place {
+  font-weight: bold;
+}
+
+#not-bold{
+  font-weight: normal;
+}
 
 @media print {
   body, page {
