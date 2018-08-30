@@ -224,7 +224,7 @@ p {
   
 }
 #cpp {
-  width: 45%;
+  width: 55%;
   margin-left: 5%;
 }
 #html {
@@ -237,11 +237,11 @@ p {
 }
 #js {
   margin-left: 5%;
-  width: 40%;
+  width: 45%;
 }
 #rails {
   margin-left: 5%;
-  width: 70%;
+  width: 60%;
 }
 
 
@@ -270,7 +270,10 @@ p {
 #not-bold{
   font-weight: normal;
 }
-
+img {
+      margin-left: 31%;
+    margin-top: 4%;
+}
 @media print {
   body, page {
     margin: 0;
